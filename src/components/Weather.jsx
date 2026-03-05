@@ -8,7 +8,7 @@ const Weather = () => {
   const fetchData = async () => {
     try {
       const geocode = await axios.get(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${import.meta.env.VITE_OPENWEATHER_API_KEY}`,
+        `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${import.meta.env.VITE_OPENWEATHER_API_KEY}`,
       );
       if (!geocode.data.length) {
         alert("City not found");
