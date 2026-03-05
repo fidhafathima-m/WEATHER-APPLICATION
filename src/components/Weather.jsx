@@ -18,7 +18,6 @@ const Weather = () => {
         `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${import.meta.env.VITE_OPENWEATHER_API_KEY}`,
       );
       setWeatherData(res.data);
-      console.log(res.data);
     } catch (error) {
       console.error(error);
     }
